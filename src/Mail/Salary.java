@@ -1,25 +1,25 @@
 package Mail;
 
-public class Salary {
-    private String salaryCompany;
+public class Salary implements CommonMessage{
+    private String salaryFrom;
     private String salaryTo;
-    private Integer salaryValue;
+    private Integer salaryContent;
 
-    public Salary(String salaryCompany, String salaryTo, Integer salaryValue) {
-        this.salaryCompany = salaryCompany;
+    public Salary(String salaryFrom, String salaryTo, Integer salaryContent) {
+        this.salaryFrom = salaryFrom;
         this.salaryTo = salaryTo;
-        this.salaryValue = salaryValue;
+        this.salaryContent = salaryContent;
     }
 
-    public String getSalaryCompany() {
-        return salaryCompany;
+    public String getFrom() {
+        return salaryFrom;
     }
 
-    public String getSalaryTo() {
+    public String getTo() {
         return salaryTo;
     }
 
-    public Integer getSalaryValue() {
-        return salaryValue;
+    public Integer getContent() {
+        return salaryContent;
     }
 }
