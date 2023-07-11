@@ -1,5 +1,7 @@
 package Seria;
 
+import Phone.Phone;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -20,7 +22,6 @@ public class ReadObject {
       } catch (IOException | ClassNotFoundException e) {
           throw new RuntimeException(e);
       }
-
 
     }
 

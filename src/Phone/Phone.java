@@ -5,7 +5,7 @@ package Phone;
 import java.util.Arrays;
 
 public class Phone {
-    int number;
+int number;
     String model;
     int weight;
     String Name;
